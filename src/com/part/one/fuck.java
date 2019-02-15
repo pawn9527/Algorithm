@@ -1,10 +1,8 @@
 package com.part.one;
 
-
 import edu.princeton.cs.introcs.StdRandom;
 
 public class fuck {
-    // 随机返回[a,b) 之间的一个 double值
     private static double uniform(double a, double b) {
         return a + StdRandom.random() * (b - a);
 
@@ -14,9 +12,7 @@ public class fuck {
         return (int) (StdRandom.random() * N);
     }
 
-    // 根据离散概率随机返回的int值 (出现i的概率为a[i])
     private static int discrete(double[] a) {
-        // a [] 中的所有元素之和必须是1
         double r = StdRandom.random();
         double sum = 0.0;
         for (int i = 0; i < a.length; i++) {
@@ -26,7 +22,6 @@ public class fuck {
         return -1;
     }
 
-    // 随机将 double 数组中的元素排序.
     private static void shuffle(double[] a) {
         int N = a.length;
         for (int i = 0; i < N; i++) {
